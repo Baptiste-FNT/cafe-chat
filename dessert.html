@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carte des Desserts</title>
+  <style>
+    /* Définition des styles généraux pour le body */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+
+    /* Style pour le header, avec un fond sombre et un texte centré */
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* Taille et espacement pour le titre principal */
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    /* Style du conteneur pour le menu, on utilise flexbox pour l'organisation */
+    .menu {
+      display: flex; /* Activer Flexbox */
+      flex-wrap: wrap; /* Permet aux éléments de passer à la ligne s'il n'y a pas de place */
+      justify-content: center; /* Centrer les éléments horizontalement */
+      gap: 20px; /* Ajouter un espacement entre les éléments */
+      padding: 20px;
+    }
+
+    /* Style pour chaque élément de dessert */
+    .dessert-item {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 280px; /* Largeur fixe pour chaque dessert */
+      text-align: center;
+      display: flex;
+      flex-direction: column; /* Alignement des éléments enfants de haut en bas */
+      justify-content: space-between; /* Répartition de l'espace verticalement */
+    }
+
+    /* Style pour le titre de chaque dessert */
+    .dessert-item h2 {
+      font-size: 1.8em;
+      color: #333;
+    }
+
+    /* Style pour la description des desserts */
+    .dessert-item p {
+      font-size: 1em;
+      color: #555;
+      margin: 10px 0;
+    }
+
+    /* Style pour le prix, plus grand et en gras */
+    .dessert-item .price {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Carte des Desserts</h1>
+</header>
+
+<!-- Conteneur principal pour le menu avec flexbox -->
+<section class="menu">
+  <!-- Dessert 1 -->
+  <article class="dessert-item">
+    <h2>Profiteroles au Chocolat</h2>
+    <p>De délicieuses boules de pâte à choux remplies de crème vanille, nappées de sauce au chocolat fondant.</p>
+    <p class="price">€6.50</p>
+  </article>
+
+  <!-- Dessert 2 -->
+  <article class="dessert-item">
+    <h2>Tarte Tatin</h2>
+    <p>Une tarte renversée aux pommes caramélisées, servie chaude avec une boule de glace à la vanille.</p>
+    <p class="price">€5.80</p>
+  </article>
+
+  <!-- Dessert 3 -->
+  <article class="dessert-item">
+    <h2>Crème Brûlée</h2>
+    <p>Une crème onctueuse à la vanille, caramélisée à la perfection sur le dessus.</p>
+    <p class="price">€5.00</p>
+  </article>
+
+  <!-- Dessert 4 -->
+  <article class="dessert-item">
+    <h2>Mousse au Chocolat</h2>
+    <p>Une mousse légère et aérienne au chocolat noir intense, avec une touche de chantilly.</p>
+    <p class="price">€4.80</p>
+  </article>
+
+  <!-- Dessert 5 -->
+  <article class="dessert-item">
+    <h2>Madeleine au Citron</h2>
+    <p>Une madeleine parfumée au citron, douce et fondante, idéale pour accompagner un café.</p>
+    <p class="price">€3.50</p>
+  </article>
+</section>
+
+</body>
+</html>
