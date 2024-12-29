@@ -1,0 +1,127 @@
+/* Généralement, on commence par définir les règles globales pour une mise en page uniforme */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Mise en page du body avec une police par défaut et une couleur de fond claire */
+body {
+  width: 85%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  height: 100%;
+}
+
+/* Header : on utilise flexbox pour aligner le titre et les images */
+header {
+  display: flex;
+  justify-content: space-between; /* Espace entre le titre et les images */
+  align-items: center; /* Centrage vertical des éléments */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  margin-top: 2%;
+  border: 2px solid #000;
+  border-radius: 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center; /* Centrage vertical des éléments dans le header */
+  flex-direction: column;
+  width: 100%;
+
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-right: 20px;
+}
+
+.header-content--block1{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.header-content--block2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.separator-text {
+  margin-right: 20px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.header-img {
+  width: 25%; /* Taille des images */
+  height: 5%;
+  border-radius: 50%; /* Forme ronde des images */
+
+}
+
+/* Navbar : Flexbox pour disposer les boutons en ligne */
+nav {
+  border: 2px solid #000;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 5%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 3%;
+  height: auto;
+}
+
+.nav-button {
+  background-color: #ff6347;
+  width: 100%;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.nav-button:hover {
+  background-color: #e55347; /* Changement de couleur au survol */
+}
+
+/* Main section */
+main {
+  border: 2px solid #000;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 5%;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  border: 2px solid #000;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 5%;
+
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
